@@ -69,6 +69,13 @@ const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.colors?.buttonhover};
    }
 
+   @media screen and (max-width: 768px) {
+    body {
+      font-size: 1.2rem; /* Decrease font size for smaller screens */
+      line-height: 2rem; /* Adjust line height accordingly */
+    }
+
+
    input, textarea{
     width: 100%;
     max-width: 560px;
@@ -110,6 +117,12 @@ const GlobalStyles = createGlobalStyle`
       margin: 10rem auto;
     }
   }
+
+  @media screen and (max-width: 480px) {
+    body {
+      font-size: 1rem; /* Further decrease font size for smaller screens */
+      line-height: 1.8rem; /* Further adjust line height for smaller screens */
+    }
 
   .gradient-circles {
     position: relative;
