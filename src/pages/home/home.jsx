@@ -3,7 +3,7 @@
 // import Card from "../../components/card";
 import CardsAndTestimonies from "../../components/cardsAndTestimonies/cardsAndTestimonies";
 // import { blogData } from "../../components/cardsAndTestimonies/cardsData";
-import Discover from "../../components/discover/discover";
+// import Discover from "../../components/discover/discover";
 import Footer from "../../components/footer/footer";
 import Hero from "../../components/hero/hero";
 import NewsLetter from "../../components/newsLetter/newsLetter";
@@ -16,7 +16,7 @@ const Home = () => {
       <div>
          <Hero />
          <Logs />
-         <Discover />
+         {/* <Discover /> */}
          <CardsAndTestimonies />
          <NewsLetter />
          <Footer />
