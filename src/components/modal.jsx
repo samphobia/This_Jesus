@@ -63,6 +63,33 @@ const ModalWrap = styled.div`
       transform: translatex(0);
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .modal {
+      .modal-body {
+        padding: 1rem; /* Adjusted padding for smaller screens */
+        max-width: 90vw; /* Adjusted max-width for smaller screens */
+        height: 80vh; /* Adjusted height for smaller screens */
+      }
+
+      img {
+        width: 90%; /* Adjusted width for smaller screens */
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .modal {
+      .modal-body {
+        padding: 0.5rem; /* Further adjusted padding for smaller screens */
+        height: 90vh; /* Further adjusted height for smaller screens */
+      }
+
+      img {
+        width: 100%; /* Further adjusted width for smaller screens */
+      }
+    }
+  }
 `;
 
 const Modal = () => {
