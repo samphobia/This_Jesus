@@ -2,94 +2,81 @@ import { useState } from "react";
 import styled from "styled-components";
 
 const TestimoniesContainer = styled.div`
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center align content horizontally on smaller screens */
+  padding: 2rem; /* Added padding for spacing on smaller screens */
 `;
 
 const TestimoniesWrapper = styled.div`
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+  display: flex;
+  flex-direction: column; /* Change to column layout on smaller screens */
+  justify-content: center;
+  align-items: center;
 
-   img{
-      margin-right: 7rem;
-   }
+  img {
+    margin-bottom: 1rem; /* Adjusted margin for spacing on smaller screens */
+  }
 
-   p {
-      color: ${({ theme }) => theme.colors?.primary};
-   }
-
-
+  p {
+    color: ${({ theme }) => theme.colors?.primary};
+    text-align: center; /* Center align text on smaller screens */
+    margin-bottom: 1rem; /* Adjusted margin for spacing on smaller screens */
+  }
 `;
 
 const TestimoniesTitle = styled.h3`
-   margin-bottom: 20px;
+  margin-bottom: 1rem; /* Adjusted margin for spacing on smaller screens */
+  text-align: center; /* Center align text on smaller screens */
 `;
 
 const Testimonial = styled.div`
-   padding: 3rem;
-   background: #f7f7f7;
-   border-radius: 10px;
-   max-width: 900px;
-  
-   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  background: #f7f7f7;
+  border-radius: 10px;
+  max-width: 90vw; /* Adjusted maximum width for smaller screens */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem; /* Adjusted margin for spacing on smaller screens */
 
-   span {
-      display: inline-block;
-      width: 90%;
-      margin: 2rem 0;
-      font-size: 1.2rem;
-      opacity: 0.85;
-   }
+  span {
+    display: block; /* Changed to block element for better spacing */
+    margin: 1rem 0; /* Adjusted margin for spacing on smaller screens */
+    font-size: 1rem; /* Adjusted font size for smaller screens */
+    opacity: 0.85;
+    text-align: center; /* Center align text on smaller screens */
+  }
 
-   .Top {
+  .Top {
+    display: flex;
+    flex-direction: column; /* Change to column layout on smaller screens */
+    align-items: center; /* Center align content horizontally on smaller screens */
+
+    .infoData {
       display: flex;
-      justify-content: space-between;
       align-items: center;
 
-      .infoData {
-         display: flex;
-         align-items: center;
-
-         img {
-            height: 60px;
-            width: 60px;
-            border-radius: 50%;
-            border: 2px solid ${({ theme }) => theme.colors?.secondary};
-            padding: 3px;
-            margin-right: 1rem;
-            object-fit: cover;
-         }
+      img {
+        height: 50px; /* Adjusted image height for smaller screens */
+        width: 50px; /* Adjusted image width for smaller screens */
+        margin-right: 1rem;
       }
-   }
+    }
+  }
 
-   .buttons {
-      display: flex;
-      text-align: center;
-      align-items: center;
-      justify-content: flex-end;
-   }
+  .buttons {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center; /* Center align buttons horizontally on smaller screens */
+    margin-top: 1rem; /* Adjusted margin for spacing on smaller screens */
+  }
 
-   #button {
-      background: #efefef;
-      border: 1px solid ${({ theme }) => theme.colors?.secondary};
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      margin-left: 2rem;
-      color: ${({ theme }) => theme.colors?.secondary};
-      font-weight: 700;
-      cursor: pointer;
-
-      &:hover {
-         color: ${({ theme }) => theme.colors?.primary};
-         border: 1px solid ${({ theme }) => theme.colors?.primary};
-      }
-   }
+  #button {
+    width: 40px; /* Adjusted button width for smaller screens */
+    height: 40px; /* Adjusted button height for smaller screens */
+    margin: 0 0.5rem; /* Adjusted margin for spacing on smaller screens */
+  }
 `;
 
 const StarRating = styled.div`

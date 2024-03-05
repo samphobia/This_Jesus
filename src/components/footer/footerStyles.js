@@ -1,46 +1,58 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
-   width: 100vw;
-   padding: 7rem 10rem;
-   display: flex;
-   justify-content: space-between;
-   background: #3a3847;
-   color: white;
+  width: 100vw;
+  padding: 4rem 2rem; /* Adjusted padding for smaller screens */
+  display: flex;
+  flex-direction: column; /* Change to column layout on smaller screens */
+  justify-content: center; /* Center content vertically on smaller screens */
+  background: #3a3847;
+  color: white;
 
-   span{
-      margin-top: .8rem;
-   }
+  span {
+    margin-top: 0.5rem; /* Adjusted margin for spacing on smaller screens */
+  }
 
-   .right {
-      display: flex;
-   }
+  .right {
+    display: flex;
+    flex-direction: column; /* Change to column layout on smaller screens */
+    align-items: center; /* Center align content horizontally on smaller screens */
+    margin-top: 2rem; /* Adjusted margin for spacing on smaller screens */
+  }
 
-   .first,
-   .second,
-   .third {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-   }
+  .first,
+  .second,
+  .third {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content horizontally on smaller screens */
+    margin-bottom: 2rem; /* Adjusted margin for spacing on smaller screens */
+  }
 
-   .first {
-      p {
-         width: 40%;
-         margin-top: 4rem;
-      }
-   }
-   .second{
-      width: 20%;
-      margin-right: 4rem;
-   }
+  .first {
+    p {
+      width: 100%; /* Adjusted width for full width on smaller screens */
+      text-align: center; /* Center align text on smaller screens */
+      margin-top: 2rem; /* Adjusted margin for spacing on smaller screens */
+    }
+  }
 
-   .third {
-      width: 40%;
+  .second {
+    width: 100%; /* Adjusted width for full width on smaller screens */
+    text-align: center; /* Center align text on smaller screens */
+    margin-top: 2rem; /* Adjusted margin for spacing on smaller screens */
+  }
 
-      img {
-         height: 30px;
-         margin-right: 2rem;
-      }
-   }
+  .third {
+    width: 100%; /* Adjusted width for full width on smaller screens */
+    text-align: center; /* Center align text on smaller screens */
+    margin-top: 2rem; /* Adjusted margin for spacing on smaller screens */
+
+    img {
+      height: 20px; /* Adjusted image height for smaller screens */
+      margin-right: 0.5rem; /* Adjusted margin for spacing on smaller screens */
+    }
+  }
 `;
+
+export default FooterWrapper;
