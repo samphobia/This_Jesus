@@ -77,8 +77,8 @@ const CardsAndTestimonies = () => {
 
   return (
     <CardsAndTestimoniesWrapper>
-      <h3>Featured Courses</h3>
-      <CardGrid>
+      {/* <h3>Blog Posts</h3> */}
+      {/* <CardGrid>
         {coursesState.loading && <Loading />}
         {coursesState.courses?.length == 0 && (
           <>
@@ -94,7 +94,7 @@ const CardsAndTestimonies = () => {
             ))}
           </>
         )}
-      </CardGrid>
+      </CardGrid> */}
       <h3>Our Blog</h3>
       <CardGrid>
         {blogData2.slice(0, 4).map((blog) => (

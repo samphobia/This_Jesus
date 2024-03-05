@@ -21,7 +21,7 @@ export const CardGrid = styled.div`
    align-items: center;
 
    > * {
-      flex: 0 1 calc(45% - 1rem); /* Adjusted card width for smaller screens with margin */
+      // flex: 0 1 calc(45% - 1rem); /* Adjusted card width for smaller screens with margin */
       margin-bottom: 2rem; /* Margin between cards */
    }
 
