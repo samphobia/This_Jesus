@@ -2,20 +2,13 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
   width: 100vw;
-  padding: 4rem 2rem; /* Adjusted padding for smaller screens */
   display: flex;
-  flex-direction: column; /* Change to column layout on smaller screens */
-  justify-content: center; /* Center content vertically on smaller screens */
-  background: #3a3847;
-  color: white;
+  background: #9FC3E7;
+  color: #3a3847;
 
-  span {
-    margin-top: 0.5rem; /* Adjusted margin for spacing on smaller screens */
-  }
 
   .right {
     display: flex;
-    flex-direction: column; /* Change to column layout on smaller screens */
     align-items: center; /* Center align content horizontally on smaller screens */
     margin-top: 2rem; /* Adjusted margin for spacing on smaller screens */
   }
@@ -51,6 +44,16 @@ export const FooterWrapper = styled.div`
     img {
       height: 20px; /* Adjusted image height for smaller screens */
       margin-right: 0.5rem; /* Adjusted margin for spacing on smaller screens */
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 4rem 2rem; /* Adjusted padding for smaller screens */
+    justify-content: center; /* Center content vertically on smaller screens */
+
+    span {
+      margin-top: 0.5rem; /* Adjusted margin for spacing on smaller screens */
     }
   }
 `;

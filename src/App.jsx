@@ -25,7 +25,7 @@ const theme = {
     black: "#000000",
     primary: "#F37D02",
     secondary: "#177415",
-    button: "#177415",
+    button: "#D9B549",
     buttonHover: "#375425",
     grey01: "#fbfbfb",
     grey02: "#e2e2e2",

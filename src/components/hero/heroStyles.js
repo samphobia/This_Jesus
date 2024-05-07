@@ -39,6 +39,15 @@ export const HeroWrapper = styled.div`
     max-width: 300px; /* Limit image width on smaller screens */
     margin-top: 2rem; /* Adjusted margin for spacing on smaller screens */
   }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 8rem 2rem; /* Adjusted padding for smaller screens */
+    justify-content: center; /* Center content vertically on smaller screens */
+
+    span {
+      margin-top: 2rem; /* Adjusted margin for spacing on smaller screens */
+    }
+  }
 `;
 
 export default HeroWrapper;

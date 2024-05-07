@@ -25,9 +25,10 @@ export const CardGrid = styled.div`
       margin-bottom: 2rem; /* Margin between cards */
    }
 
-   @media screen and (max-width: 768px) {
+   @media(max-width: 768px) {
       > * {
          flex: 0 1 calc(100% - 1rem); /* Full width on smaller screens with margin */
+         align-items: center;
       }
    }
 `;
@@ -40,6 +41,7 @@ export const DualCardGrid = styled.div`
 
    @media screen and (min-width: 768px) {
       grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+      align-items: center;
    }
 
    > * {

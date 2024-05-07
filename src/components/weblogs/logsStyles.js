@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const LogsWrapper = styled.div`
    width: 100vw;
-   height: 120px;
    background: #263138;
    margin: 6rem 0rem 0rem;
 `;
@@ -21,7 +20,7 @@ export const LogsContainer = styled.div`
    }
 
    .log {
-      background: ${({ theme }) => theme.colors?.secondary};
+      background: #D9B549;
       color: white;
       padding: 2rem;
       width: 15%;
@@ -31,4 +30,14 @@ export const LogsContainer = styled.div`
       transform: translateY(-20px);
       border-radius: 10px;
    }
+
+   @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 4rem 2rem; /* Adjusted padding for smaller screens */
+      justify-content: center; /* Center content vertically on smaller screens */
+  
+      span {
+        margin-top: 0.5rem; /* Adjusted margin for spacing on smaller screens */
+      }
+    }
 `;

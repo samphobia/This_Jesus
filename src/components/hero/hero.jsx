@@ -1,4 +1,4 @@
-import heroimage from "../../assets/heroimage.png";
+import heroimage from "../../assets/bookimage.jpeg";
 import { HeroWrapper } from "./heroStyles";
 
 const Hero = () => {
