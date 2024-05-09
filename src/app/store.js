@@ -1,14 +1,15 @@
-import { configureStore } from "@reduxjs/toolkit";
-import authReducer from "../features/auth/authSlice";
-// import applicantReducer from "../features/Applicants/applicantSlice";
-import booksReducer from "../features/book/bookSlice";
+// store.js
+import { configureStore } from '@reduxjs/toolkit';
+import userReducer from '../features/auth/userSlice';
+import authReducer from '../features/auth/autheSlice';
+import logoutReducer from '../features/auth/logoutSlice';
 
-const store = configureStore({
+export const store = configureStore({
   reducer: {
+    user: userReducer,
     auth: authReducer,
-    // applicants: applicantReducer,
-    books: booksReducer,
+    logout: logoutReducer,
   },
 });
 
-export default store;
+export default store

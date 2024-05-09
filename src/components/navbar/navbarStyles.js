@@ -91,3 +91,33 @@ export const MenuItem = styled.div`
     background-color: #555;
   }
 `;
+
+export const Navbutton = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40vw;
+
+  // @media (max-width: 768px) {
+  //   flex-direction: column;
+  // }
+
+  
+`;
+
+
+export const Button2 = styled.button`
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  align-items: center;
+  border-radius: 5px;
+  flex-direction: column;
+  cursor: pointer;
+  width: 70px;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #0056b3;
+  }
+`;

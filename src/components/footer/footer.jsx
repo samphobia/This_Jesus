@@ -10,9 +10,7 @@ const Footer = () => {
                {/* <img src={logo} alt="logo" /> */}
                <h2>This Jesus</h2>
                <p>
-                  This Jesus blog is a religious and
-                  educational social enterprise at the forefront of guiding
-                  teeming believers through theri life as a believer
+                  This Jesus Site is all about the works of Rev.Tola Osinubi on his religious journey in christianity with Jesus
                </p>
             </div>
 
@@ -33,10 +31,9 @@ const Footer = () => {
             <br />
             <br />
             <span>info@thisjesus.com</span>
-            <span>+234 8027 049 297</span>
+            <span>+234 816 772 8555</span>
             <span>
-               5, OGUNSHE STREET, SAWMILL BUS STOP, SAGAMU ROAD, IKORODU, LAGOS,
-               NIGERIA.
+               333 Adeboye Road Atikori Ogun State, Nigeria
             </span>
             <br/>
             <img src={cards} alt="cards" />
