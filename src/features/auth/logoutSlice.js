@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 export const BASE_URL = "http://localhost:3002";
+export const BASE_URL2 = "https://tj-backend.onrender.com";
 
 // Define initial state
 const initialState = {
@@ -13,7 +14,7 @@ export const logoutUser = createAsyncThunk(
   'auth/logoutUser',
   async (_, { rejectWithValue }) => {
     try {
-      const response = await fetch(`${BASE_URL}/api/auth/logout`, {
+      const response = await fetch(`${BASE_URL2}/api/auth/logout`, {
         method: 'POST', // Assuming your logout endpoint is a POST request
         headers: {
           'Content-Type': 'application/json',

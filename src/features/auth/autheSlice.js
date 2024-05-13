@@ -3,6 +3,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { registerUser } from './userSlice';
 
 export const BASE_URL = "http://localhost:3002";
+export const BASE_URL2 = "https://tj-backend.onrender.com";
 
 // Define initial state
 const initialState = {
@@ -17,7 +18,7 @@ export const loginUser = createAsyncThunk(
   'auth/loginUser',
   async (userData, { rejectWithValue, dispatch }) => {
     try {
-      const response = await fetch(`${BASE_URL}/api/auth/login`, {
+      const response = await fetch(`${BASE_URL2}/api/auth/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
